@@ -1,13 +1,13 @@
-import Footer from "../../header/footer"
-import Header from "../../header/header"
+import Footer from "../Components/footer"
+import Header from "../Components/header"
 
 function Contact () {
     return <div>
 
-        <Header />
+ 
 
    {/* Contact Us Page */}
-<section className="bg-white py-20 px-6 md:px-16 text-gray-800">
+<section className="bg-white py-20 px-6 md:px-16 text-gray-800 mt-16">
   <div className="max-w-6xl mx-auto">
     {/* Header */}
     <div className="text-center mb-16">
@@ -92,7 +92,6 @@ function Contact () {
 </section>
 
 
-<Footer />
 
     
 
