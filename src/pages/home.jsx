@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from "../../header/header";
-import Footer from '../../header/footer';
+import Footer from "../Components/footer"
+import Header from "../Components/header"
 
 function Home() {
     return (
         <div>
-            <Header />
+         
             <div className="bg-white text-gray-800">
                {/* Hero Section */}
 <section className="bg-blue-900 text-white py-20 px-6 md:px-16 w-full mt-20 min-h-[750px] overflow-hidden">
@@ -63,95 +63,124 @@ function Home() {
                     </div>
                 </section>
 
-                {/* Categories with Icons */}
-                <section className="py-16 px-6 md:px-16 bg-white">
-                    <div className="max-w-7xl mx-auto text-center mb-12">
-                        <h2 className="text-3xl font-bold text-blue-900">📖 Categories</h2>
-                        <p className="text-gray-600 mt-2">Explore books by genre</p>
-                    </div>
-                    <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 shadow-2xl shadow-blue-100 p-7">
-                        {['Science Fiction', 'Romance', 'Self-Help', 'Psychology'].map((category, index) => (
-                            <div className="bg-blue-100 py-6 px-4 rounded-lg text-center hover:bg-blue-200 transition" key={index}>
+           
 
-                      
-                                <i className={`fas fa-book text-3xl text-blue-700 mb-2`}></i>
-                                <i className={`fas fa-book text-3xl text-green-700 mb-2 ml-4`}></i>
-                                 
-                                <h3 className="font-semibold text-blue-900 mt-2">{category}</h3>
-                                <button className='bg-yellow-400 text-white px-11 py-2 -translate-x-5 mt-7  rounded-lg font-semibold'>read</button>
-                                <button className='bg-blue-400 text-white px-11 py-2 mt-7 rounded-lg font-semibold'>buy </button>
-                            </div>
-                        ))}
-                    </div>
-                </section>
+      <section className="bg-gray-50 py-8 px-4 text-center">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl font-bold text-black mb-4"> 📖 Book Categories</h2>
+        <p className="text-gray-500 mb-10">
+          Explore a variety of genres and book types for every reader's interest.
+        </p>
+
+        <div className="flex flex-wrap gap-6 justify-center">
+
+          {/* Fiction */}
+          <div className="bg-white w-36 p-8 rounded-xl shadow-md flex flex-col items-center hover:shadow-lg transition">
+            <i className="fas fa-book text-4xl"></i>
+            <p className="mt-4 font-medium text-sm">Fiction</p>
+          </div>
+
+          {/* Science */}
+          <div className="bg-white w-36 p-8 rounded-xl shadow-md flex flex-col items-center hover:shadow-lg transition">
+            <i className="fas fa-flask text-4xl"></i>
+            <p className="mt-4 font-medium text-sm">Science</p>
+          </div>
+
+          {/* Comics */}
+          <div className="bg-white w-36 p-8 rounded-xl shadow-md flex flex-col items-center hover:shadow-lg transition">
+            <i className="fas fa-book-open text-4xl"></i>
+            <p className="mt-4 font-medium text-sm">Comics</p>
+          </div>
+
+          {/* History */}
+          <div className="bg-white w-36 p-8 rounded-xl shadow-md flex flex-col items-center hover:shadow-lg transition">
+            <i className="fas fa-landmark text-4xl"></i>
+            <p className="mt-4 font-medium text-sm">History</p>
+          </div>
+
+          {/* Technology */}
+          <div className="bg-white w-36 p-8 rounded-xl shadow-md flex flex-col items-center hover:shadow-lg transition">
+            <i className="fas fa-laptop-code text-4xl"></i>
+            <p className="mt-4 font-medium text-sm">Technology</p>
+          </div>
+
+          {/* Biography */}
+          <div className="bg-white w-36 p-8 rounded-xl shadow-md flex flex-col items-center hover:shadow-lg transition">
+            <i className="fas fa-user text-4xl"></i>
+            <p className="mt-4 font-medium text-sm">Biography</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
 
 
                 
 
+     <section className="bg-gray-100 py-16 px-4 text-center">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl font-bold mb-6 text-gray-800">Featured Books</h2>
+        <p className="text-gray-500 mb-12">Discover top-rated and trending books. Download or read now!</p>
 
-{/* Featured Books Section */}
-<section className="py-28 px-6 md:px-16 bg-gradient-to-br from-gray-50 to-white">
-  <div className="max-w-7xl mx-auto text-center mb-12">
-    <h2 className="text-4xl font-extrabold text-blue-900">📚 Featured Books</h2>
-    <p className="text-gray-600 mt-3 text-lg">
-      Ku raaxayso buugaagta ugu caansan iyo kuwa ugu akhriska badan
-    </p>
-  </div>
+        <div className="flex flex-wrap gap-6 justify-center">
 
-  <div className="grid md:grid-cols-3 gap-10 px-6 md:px-0">
-    {[
-      {
-        title: 'The Alchemist',
-        author: 'Paulo Coelho',
-        summary: 'Sheeko aad u xiiso badan oo ka hadlaysa raadinta riyadaada nolosha.',
-        img: 'https://covers.openlibrary.org/b/id/8231856-L.jpg',
-      },
-      {
-        title: 'Atomic Habits',
-        author: 'James Clear',
-        summary: 'Buug kaa caawinaya inaad noloshaada ka dhigto mid habaysan adigoo wax yar bilowga ka bilaabaya.',
-        img: 'https://covers.openlibrary.org/b/id/10594778-L.jpg',
-      },
-      {
-        title: 'Becoming',
-        author: 'Michelle Obama',
-        summary: 'Qiso dhab ah oo laga qoray Michelle Obama oo dhiirrigelin leh.',
-        img: 'https://covers.openlibrary.org/b/id/9362228-L.jpg',
-      },
-    ].map((book, index) => (
-      <div
-        key={index}
-        className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col"
-      >
-        <img
-          src={book.img}
-          alt={book.title}
-          className="w-full h-72 object-cover"
-        />
-        <div className="p-5 flex flex-col flex-grow">
-          <h3 className="text-2xl font-bold text-blue-800 mb-1">{book.title}</h3>
-          <p className="text-sm text-gray-600 mb-2">by {book.author}</p>
-          <p className="text-gray-700 text-sm mb-4 flex-grow">{book.summary}</p>
-
-          <div className="flex justify-between items-center mt-auto">
-            <button className="bg-blue-800 text-white px-3 py-2 rounded hover:bg-blue-700 text-sm transition">
-              View Details
-            </button>
-            <button className="bg-green-600 text-white px-3 py-2 rounded hover:bg-green-500 text-sm transition">
-              Read Now
-            </button>
-            <button className="bg-yellow-500 text-white px-3 py-2 rounded hover:bg-yellow-400 text-sm transition">
-              📌 Bookmark
-            </button>
+          {/* Book 1 */}
+          <div className="bg-white w-64 p-4 rounded-xl shadow-md hover:shadow-lg transition">
+            <img src="https://m.media-amazon.com/images/I/71+2-t7M35L._SY522_.jpg" alt="The Power of Habit" className="h-52 w-full object-cover rounded-md" />
+            <h3 className="mt-4 text-lg font-semibold text-gray-800">The Alchemist</h3>
+            <p className="text-sm text-gray-600 mt-1">by Charles Duhigg</p>
+            <p className="mt-2 font-bold text-blue-600">$14.99</p>
+            <div className="mt-4 flex gap-2">
+              <button className="bg-blue-600 text-white text-sm px-4 py-2 rounded hover:bg-blue-700 transition">Download</button>
+              <button className="bg-green-600 text-white text-sm px-4 py-2 rounded hover:bg-green-700 transition">Read Now</button>
+            </div>
           </div>
+
+          {/* Book 2 */}
+          <div className="bg-white w-64 p-4 rounded-xl shadow-md hover:shadow-lg transition">
+    
+            <img src="https://m.media-amazon.com/images/I/81ANaVZk5LL._SY522_.jpg" alt="Atomic Habits" className="h-52 w-full object-cover rounded-md" />
+            <h3 className="mt-4 text-lg font-semibold text-gray-800">Atomic Habits</h3>
+            <p className="text-sm text-gray-600 mt-1">by James Clear</p>
+            <p className="mt-2 font-bold text-blue-600">$18.99</p>
+            <div className="mt-4 flex gap-2">
+              <button className="bg-blue-600 text-white text-sm px-4 py-2 rounded hover:bg-blue-700 transition">Download</button>
+              <button className="bg-green-600 text-white text-sm px-4 py-2 rounded hover:bg-green-700 transition">Read Now</button>
+            </div>
+          </div>
+
+          {/* Book 3 */}
+          <div className="bg-white w-64 p-4 rounded-xl shadow-md hover:shadow-lg transition">
+            <img src="https://m.media-amazon.com/images/I/81BE7eeKzAL._SY522_.jpg" alt="Rich Dad Poor Dad" className="h-52  w-full object-cover rounded-md" />
+            <h3 className="mt-4 text-lg font-semibold text-gray-800">Rich Dad Poor Dad</h3>
+            <p className="text-sm text-gray-600 mt-1">by Robert Kiyosaki</p>
+            <p className="mt-2 font-bold text-blue-600">$12.49</p>
+            <div className="mt-4 flex gap-2">
+              <button className="bg-blue-600 text-white text-sm px-4 py-2 rounded hover:bg-blue-700 transition">Download</button>
+              <button className="bg-green-600 text-white text-sm px-4 py-2 rounded hover:bg-green-700 transition">Read Now</button>
+            </div>
+          </div>
+
+          {/* Book 4 */}
+          <div className="bg-white w-64 p-4 rounded-xl shadow-md hover:shadow-lg transition">
+            <img src="https://m.media-amazon.com/images/I/61IxJuRI39L._AC_UY327_FMwebp_QL65_.jpg" alt="The Alchemist" className="h-52 w-full object-cover rounded-md" />
+            <h3 className="mt-4 text-lg font-semibold text-gray-800">Think and Grow Rich</h3>
+            <p className="text-sm text-gray-600 mt-1">by Paulo Coelho</p>
+            <p className="mt-2 font-bold text-blue-600">$10.99</p>
+            <div className="mt-4 flex gap-2">
+              <button className="bg-blue-600 text-white text-sm px-4 py-2 rounded hover:bg-blue-700 transition">Download</button>
+              <button className="bg-green-600 text-white text-sm px-4 py-2 rounded hover:bg-green-700 transition">Read Now</button>
+            </div>
+          </div>
+
+  
+
+      
+
         </div>
       </div>
-    ))}
-  </div>
-</section>
-
-
+    </section>
                 {/* Why Choose Us */}
                 <section className="py-20 px-6 md:px-16 bg-white">
                     <div className="max-w-7xl mx-auto text-center">
@@ -199,7 +228,7 @@ function Home() {
 
 
         
-<Footer />
+
 
         
         
