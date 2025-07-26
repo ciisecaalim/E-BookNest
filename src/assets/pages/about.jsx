@@ -1,6 +1,6 @@
 import Footer from "../../header/footer"
 import Header from "../../header/header"
-import img from "../../img/ciise.jpg"
+import img from "../../img/ciise.png"
  
 function About () {
     return <div>
@@ -25,9 +25,8 @@ function About () {
         Waxaan nahay laba aqoonyahan oo jecel buugaagta — <strong>Ciise</strong> iyo <strong>Mohamed</strong>. Himiladeennu waa in aan fududeyno helitaanka buugaag tayo leh oo Af-Soomaali ah, gaar ahaan kuwa aan si fudud loo heli karin.
       </p>
     </div>
-    <img
-      src={img} alt="Founders" className="rounded-xl shadow-lg w-[300px]"/>
-  </div>
+
+    <img src={img} alt="Founders" className="rounded-xl shadow-lg shadow-yellow- w-[300px] "/></div>
 
   {/* Section 2: Mission */}
   <div className="grid md:grid-cols-2 gap-12 items-center mb-20">

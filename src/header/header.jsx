@@ -9,8 +9,8 @@ function Header() {
 
     return (
  
-         <div className="relative sm:flex   bg-white  shadow-lg text-2xl font-semibold ">
-    <div className="flex justify-between  sm:px-20 px-5 py-5  ">
+         <div className="relative sm:flex   bg-white  shadow-lg text-2xl font-semibold mt-6 pb-9">
+    <div className="flex justify-between  sm:px-20 px-5 py-5">
     <h1 className="text-4xl text-blue-900 whitespace-nowrap -ml-2 hover:scale-1105 cursor-pointer hover: transition-transform duration-500">📚 Booknest</h1>
      <i className="fa-solid fa-bars sm:hidden text-4xl text-gray-800 cursor-pointer"></i>
     </div>

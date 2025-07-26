@@ -66,7 +66,7 @@ function Footer() {
       </div>
 
       {/* Divider */}
-      <div className="mt-10 border-t border-blue-700 pt-5 text-center text-sm text-gray-300">
+      <div className="mt-10 border-t border-white pt-5 text-center text-sm text-gray-300">
         © {new Date().getFullYear()} <span className="text-white font-semibold">Booknest</span>. All rights reserved.
       </div>
     </footer>

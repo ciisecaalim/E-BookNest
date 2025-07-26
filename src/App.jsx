@@ -5,6 +5,8 @@ import Contact from "./assets/pages/contact"
 import Login from "./assets/pages/login"
 import Shop from "./assets/pages/shop"
 import CartPage from "./assets/pages/cartPage"
+ 
+import Signup from "./assets/pages/signUp"
 
  
   
@@ -18,6 +20,7 @@ function App() {
     <Route path="/Contact" element={<Contact />}/>
     <Route path="/Login" element={<Login />}/>
     <Route path="/cart" element={<CartPage/>}/>
+    <Route path="/Signup" element={<Signup/>}/>
   </Routes>
 }
 

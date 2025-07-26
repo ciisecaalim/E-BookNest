@@ -8,7 +8,8 @@ function Home() {
             <Header />
             <div className="bg-white text-gray-800">
                {/* Hero Section */}
-<section className="bg-blue-900 text-white py-20 px-6 md:px-16 w-full mt-20 min-h-[750px]">
+<section className="bg-blue-900 text-white py-20 px-6 md:px-16 w-full mt-20 min-h-[750px] overflow-hidden">
+
   <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10 mt-10">
 
     
@@ -20,6 +21,8 @@ function Home() {
       <h1 className="text-5xl font-bold leading-tight transition-transform duration-900 ease-in-out hover:scale-1105">
         Welcome to <span className="text-yellow-400">📚 Booknest</span>
       </h1>
+
+      
       {/* Paragraph in the Middle */}
       <p className="text-lg text-gray-200 leading-relaxed transition-transform duration-300 ease-in-out hover:scale-105">
         Kusoo dhawoow maktabadda | Af-Soomaaliga. Waxaad halakan ka heli kartaa buugaag, qoraallo, iyo qormooyin ku qoran af-Soomaaliga. Fadlan la soco boggaan si aad u heshid sheekooyin, taariikh iyo aqoon guud oo ku saabsan ganacsiga, diinta, caafimaadka iyo wixi la mid ah…
@@ -66,11 +69,17 @@ function Home() {
                         <h2 className="text-3xl font-bold text-blue-900">📖 Categories</h2>
                         <p className="text-gray-600 mt-2">Explore books by genre</p>
                     </div>
-                    <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+                    <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 shadow-2xl shadow-blue-100 p-7">
                         {['Science Fiction', 'Romance', 'Self-Help', 'Psychology'].map((category, index) => (
                             <div className="bg-blue-100 py-6 px-4 rounded-lg text-center hover:bg-blue-200 transition" key={index}>
+
+                      
                                 <i className={`fas fa-book text-3xl text-blue-700 mb-2`}></i>
+                                <i className={`fas fa-book text-3xl text-green-700 mb-2 ml-4`}></i>
+                                 
                                 <h3 className="font-semibold text-blue-900 mt-2">{category}</h3>
+                                <button className='bg-yellow-400 text-white px-11 py-2 -translate-x-5 mt-7  rounded-lg font-semibold'>read</button>
+                                <button className='bg-blue-400 text-white px-11 py-2 mt-7 rounded-lg font-semibold'>buy </button>
                             </div>
                         ))}
                     </div>
