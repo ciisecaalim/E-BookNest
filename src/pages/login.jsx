@@ -27,7 +27,7 @@ function Login() {
     };
 
     return (
-        <div className="min-h-screen flex flex-col">
+        <div className="min-h-screen flex flex-col mt-28">
         
             <div className="flex flex-1 items-center justify-center">
                 <div className="bg-white p-6 sm:p-8 rounded-lg shadow-md w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
@@ -79,7 +79,10 @@ function Login() {
                             <input type="checkbox" id="remember" className="mr-2" />
                             <label htmlFor="remember" className="text-gray-700">Remember Me</label>
                         </div>
-                      <a href="/" className="px-8 py-2 bg-blue-900 text-white ml-[45%]">Login</a>
+                        <button
+    type="submit"
+    className="px-8 py-2 bg-blue-900 text-white ml-[45%] rounded"
+></button>
                     </form>
                     <div className="mt-4 text-center">
                         <a href="#" className="text-blue-500 hover:underline">Forgot Password?</a>

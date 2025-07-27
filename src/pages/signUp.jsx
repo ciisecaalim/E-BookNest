@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import Footer from "../Components/footer";
-import Header from "../Components/header";
+import { useNavigate, Link } from "react-router-dom";
 
 function Signup() {
     const [username, setUsername] = useState("");
@@ -12,21 +10,29 @@ function Signup() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Here you would typically handle signup logic, like calling an API
 
-        // Clear input fields after submission
+        if (password !== confirmPassword) {
+            alert("Passwords do not match!");
+            return;
+        }
+
+        // Store user data in localStorage (only for demo purposes)
+        localStorage.setItem("username", username);
+        localStorage.setItem("email", email);
+        localStorage.setItem("password", password);
+
+        // Clear form fields
         setUsername("");
         setEmail("");
         setPassword("");
         setConfirmPassword("");
 
-        // Redirect to login page
+        // Navigate to login page
         navigate('/login');
     };
 
     return (
-        <div className="min-h-screen flex flex-col bg-gradient-to-r from-gray-800 to-gray-900 text-white mt-20">
-         
+        <div className="min-h-screen flex flex-col bg-gradient-to-r from-gray-800 to-gray-900 text-white pt-28 pb-10">
             <div className="flex flex-1 items-center justify-center">
                 <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
                     <h2 className="text-3xl font-bold mb-6 text-center text-gray-800">Create an Account</h2>
@@ -75,18 +81,23 @@ function Signup() {
                                 onChange={(e) => setConfirmPassword(e.target.value)}
                             />
                         </div>
-                        <button className="w-full bg-blue-500 text-white p-3 rounded hover:bg-blue-600 transition duration-200" type="submit">Sign Up</button>
+                        <button
+                            type="submit"
+                            className="w-full bg-blue-500 text-white p-3 rounded hover:bg-blue-600 transition duration-200"
+                        >
+                            Sign Up
+                        </button>
                     </form>
                     <div className="mt-4 text-center">
                         <p className="text-gray-600">
-                            Already have an account? <a href="/login" className="text-blue-500 hover:underline">Login</a>
+                            Already have an account?{" "}
+                            <Link to="/login" className="text-blue-500 hover:underline">Login</Link>
                         </p>
                     </div>
                 </div>
             </div>
-      
         </div>
     );
 }
 
-export default Signup
+export default Signup;
