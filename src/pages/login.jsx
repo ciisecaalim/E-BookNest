@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import Footer from "../Components/footer";
-import Header from "../Components/header";
+import React, { useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
 
 function Login() {
     const [username, setUsername] = useState("");
@@ -10,25 +8,29 @@ function Login() {
     const [showPassword, setShowPassword] = useState(false);
     const navigate = useNavigate();
 
-    useEffect(() => {
-        setUsername("");
-        setEmail("");
-        setPassword("");
-    }, []);
-
     const handleSubmit = (e) => {
         e.preventDefault();
-        localStorage.setItem('username', username);
-        localStorage.setItem('email', email);
-        setUsername("");
-        setEmail("");
-        setPassword("");
-        navigate('/Data');
+
+        const storedUsername = localStorage.getItem("username");
+        const storedEmail = localStorage.getItem("email");
+        const storedPassword = localStorage.getItem("password");
+
+        if (
+            username === storedUsername &&
+            email === storedEmail &&
+            password === storedPassword
+        ) {
+            setUsername("");
+            setEmail("");
+            setPassword("");
+            navigate("/Data");
+        } else {
+            alert("Invalid login credentials!");
+        }
     };
 
     return (
         <div className="min-h-screen flex flex-col mt-28">
-        
             <div className="flex flex-1 items-center justify-center">
                 <div className="bg-white p-6 sm:p-8 rounded-lg shadow-md w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
                     <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
@@ -80,23 +82,25 @@ function Login() {
                             <label htmlFor="remember" className="text-gray-700">Remember Me</label>
                         </div>
                         <button
-    type="submit"
-    className="px-8 py-2 bg-blue-900 text-white ml-[45%] rounded"
-></button>
+                            type="submit"
+                            className="px-8 py-2 bg-blue-900 text-white ml-[45%] rounded"
+                        >
+                            Login
+                        </button>
                     </form>
                     <div className="mt-4 text-center">
-                        <a href="#" className="text-blue-500 hover:underline">Forgot Password?</a>
+                        <Link to="/forgot-password" className="text-blue-500 hover:underline">Forgot Password?</Link>
                     </div>
                     <div className="mt-2 text-center">
                         <p className="text-gray-600">
-                            Don't have an account? <a href="/Signup" className="text-blue-500 hover:underline">Sign Up</a>
+                            Don't have an account?{" "}
+                            <Link to="/Signup" className="text-blue-500 hover:underline">Sign Up</Link>
                         </p>
                     </div>
                 </div>
             </div>
-         
         </div>
     );
 }
 
-export default Login
+export default Login;
