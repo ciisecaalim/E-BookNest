@@ -1,5 +1,6 @@
 import React from 'react';
-
+// import Footer from "../Components/footer";
+// import Header from "../Components/header";
 import Swal from 'sweetalert2';
 
 function Home() {
@@ -27,7 +28,7 @@ function Home() {
                         {/* Left Content */}
                         <div className="flex flex-col justify-between gap-6 opacity-0 -translate-x-10 animate-fadeInbt">
                             <h1 className="text-5xl font-bold leading-tight transition-transform duration-900 ease-in-out hover:scale-1105">
-                                Welcome to  <span className="text-yellow-400">📚 Booknest</span>
+                                Welcome to <span className="text-yellow-400">📚 Booknest</span>
                             </h1>
                             <p className="text-lg text-gray-200 leading-relaxed transition-transform duration-300 ease-in-out hover:scale-105">
                                 Kusoo dhawoow maktabadda | Af-Soomaaliga. Waxaad halakan ka heli kartaa buugaag, qoraallo, iyo qormooyin ku qoran af-Soomaaliga. Fadlan la soco boggaan si aad u heshid sheekooyin, taariikh iyo aqoon guud oo ku saabsan ganacsiga, diinta, caafimaadka iyo wixi la mid ah…
@@ -98,8 +99,8 @@ function Home() {
 
 
                 {/* About Section */}
-                <section className="py-16 px-6 md:px-16 bg-gray-50 md:mt-10 ">
-                    <div className="max-w-4xl mx-auto text-center -mt-28">
+                <section className="py-16 px-6 md:px-16 bg-gray-50 md:mt-10">
+                    <div className="max-w-4xl mx-auto text-center">
                         <h2 className="text-3xl font-bold text-blue-900 mb-4">About Booknest</h2>
                         <p className="text-gray-700 text-lg">
                             Fahamka noocyada buuggu wuxuu noqon karaa jahawareer. Iyada oo qaybo badan oo hareeraha sabbaynaya, sidee loo heli karaa dhab ahaan waxa ay raadinayaan? Erayada fudud, nooca buuggu waa qayb ka mid ah suugaanta wadaagta mawduucyo gaar ah ama qaab-dhismeed. Ogaanshaha waxyaabaha lagama maarmaanka u ah noocyadan ayaa fududeynaya inaad doorato buugga saxda ah iyadoo loo eegayo dareenkaaga ama xiisahaaga.
