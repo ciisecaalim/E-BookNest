@@ -1,10 +1,9 @@
-import Footer from "../Components/footer";
-import Header from "../Components/header";
+
 
 export default function AboutPage() {
   return (
      <div>
-        <Header />
+
 
 
 
