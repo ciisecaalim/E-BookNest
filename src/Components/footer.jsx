@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <footer className="bg-blue-900 text-gray-200 pt-14 pb-8 px-6 md:px-16 lg:px-32 relative">
@@ -15,10 +17,10 @@ function Footer() {
         <div>
           <h3 className="text-xl font-semibold text-white mb-4">Explore</h3>
           <ul className="space-y-2">
-            <li><a href="/" className="hover:text-yellow-400 transition">Home</a></li>
-            <li><a href="/about" className="hover:text-yellow-400 transition">ABOUT</a></li>
-            <li><a href="/shop" className="hover:text-yellow-400 transition">BOOKS</a></li>
-            <li><a href="/Contact" className="hover:text-yellow-400 transition">CONTACT</a></li>
+           <Link to="/"><li className="hover:text-yellow-400 transition">Home</li></Link> 
+          <Link to="/about"><li className="hover:text-yellow-400 transition">ABOUT</li></Link> 
+          <Link to="/shop"><li className="hover:text-yellow-400 transition">BOOKS</li></Link> 
+           <Link to="/contact"><li className="hover:text-yellow-400 transition">CONTACT</li></Link> 
           
           </ul>
         </div>

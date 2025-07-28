@@ -15,7 +15,7 @@ const cartItem = useSelector((e)=> e.cart.cartItem)
   };
 
   return (
-    <div className="fixed top-0 w-full   sm:flex   bg-white shadow-lg text-2xl font-semibold z-50 ">
+    <div className="fixed top-0 w-full  sm:flex   bg-white shadow-lg text-2xl font-semibold z-50 ">
     <div className="flex justify-between  sm:px-20 px-5 py-6  ">
     <h1 className="text-4xl text-blue-900 whitespace-nowrap -ml-2 animate-bounce">📚 Booknest</h1>
      <i onClick={handleIsOpen}className="fa-solid fa-bars sm:hidden text-4xl text-gray-800 cursor-pointer"></i>
