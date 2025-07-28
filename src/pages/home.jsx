@@ -47,39 +47,21 @@ function Home() {
                             />
                         </div>
 
-
 {/* box */}
- 
-<div className="overflow-hidden"> 
-                   
-<div className=" w-36 h-20 bg-white absolute top-[400px]  rounded-lg ml-[660px] text-green-600 text-center text-2xl p-1 pt-2 animate-pulse animate-box overflow-hidden">
- 
-<i class="fa-solid fa-address-book"></i>
-<h1 className="text-sm mt-2 overflow-hidden">address-book</h1>
+<div className="relative overflow-hidden w-full h-[500px] ml-[600px] transform -translate-y-[450px]  translate-x-16">
+  <div className="w-36 h-20 bg-white absolute top-[100px]  rounded-lg text-green-600 text-center text-2xl p-1 pt-2 animate-pulse animate-box">
+    <i className="fa-solid fa-address-book"></i>
+    <h1 className="text-sm mt-2">address-book</h1>
+  </div>
+  <div className="w-36 h-20 bg-white absolute top-[100px] left-[75%] rounded-lg text-green-600 text-center text-2xl p-1 pt-2 animate-pulse animate-box2">
+    <i className="fa-solid fa-address-book"></i>
+    <h1 className="text-sm mt-2">address-book</h1>
+  </div>
+  <div className="w-24 h-28 bg-white absolute top-[380px] left-[50%] rounded-lg text-green-600 text-center text-2xl p-1 pt-4 animate-bounce animate-box3">
+    <i className="fa-solid fa-address-book"></i>
+    <h1 className="text-sm mt-2">address-book</h1>
+  </div>
 </div>
-  
- 
-
-{/* 4 */}
-<div className="w-36 h-20 overflow-hidden bg-white absolute top-[400px] text-green-600  rounded-lg ml-[1140px] text-center text-2xl p-1 pt-2 animate-pulse animate-box2 ">
-
-<i class="fa-solid fa-address-book"></i>
-<h1 className="text-sm mt-2">address-book</h1>
-</div>
-
-
-
-{/* box4 */}
-                        
-<div className="w-24 h-28 bg-white overflow-hidden absolute top-[680px] text-green-600  rounded-lg ml-[920px] text-center text-2xl p-1 pt-4 animate-bounce animate-box3">
-
-<i class="fa-solid fa-address-book"></i>
-<h1 className="text-sm mt-2">address-book</h1>
-</div>
-
-
-</div>
- 
 
 
 
@@ -115,7 +97,7 @@ function Home() {
           Explore a variety of genres and book types for every reader's interest.
         </p>
 
-        <div className="flex flex-wrap gap-6 justify-center">
+        <div className="flex flex-wrap gap-6 justify-center animate-pulse">
 
           {/* Fiction */}
           <div className="bg-white w-36 p-8 rounded-xl shadow-md flex flex-col items-center hover:shadow-lg transition">
@@ -212,7 +194,7 @@ function Home() {
                 </section>
 
                 {/* Testimonials */}
-                <section className="bg-blue-50 py-20 px-6 md:px-16">
+                <section className="bg-blue-50 py-20 px-6 md:px-16 animate-pulse">
                     <div className="max-w-5xl mx-auto text-center">
                         <h2 className="text-3xl font-bold text-blue-900 mb-12">💬 What Readers Say</h2>
                         <div className="grid md:grid-cols-3 gap-8">
