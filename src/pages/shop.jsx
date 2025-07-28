@@ -24,7 +24,7 @@ function Shop() {
                     placeholder="Search product"
                 />
 
-                <div className="flex flex-wrap gap-20 text-white   sm:text-lg md:text-xl ml-0 md:ml-[2%] font-semibold bg-blue-900 rounded-lg px-10 py-7  text-4xl md:mt-28 md:mb-12 ">
+                <div className="flex flex-wrap gap-10 text-white   sm:text-lg md:text-xl ml-0 md:ml-[2%] font-semibold bg-blue-900 rounded-lg px-10 py-2  text-4xl md:mt-10 md:mb-12 ">
                     {["", "Literature & Fiction", "Personal Growth", "Business & Finance", "Society & Knowledge", "Psychology & Philosophy"].map((category, idx) => (
                         <label className="flex items-center gap-1" key={idx}>
                             <input

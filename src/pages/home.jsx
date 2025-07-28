@@ -1,6 +1,6 @@
 import React from 'react';
-import Footer from "../Components/footer";
-import Header from "../Components/header";
+// import Footer from "../Components/footer";
+// import Header from "../Components/header";
 import Swal from 'sweetalert2';
 
 function Home() {
@@ -19,7 +19,7 @@ function Home() {
 
     return (
         <div className="overflow-hidden">
-            <Header />
+        
 
             <div className="bg-white text-gray-800 overflow-hidden">
                 {/* Hero Section */}
@@ -110,23 +110,54 @@ function Home() {
 
                 {/* Book Categories */}
                 <section className="bg-gray-50 py-8 px-4 text-center">
-                    <div className="max-w-7xl mx-auto">
-                        <h2 className="text-4xl font-bold text-black mb-4 p-3"> 📖 Book Categories</h2>
-                        <p className="text-gray-500 mb-10">
-                            Explore a variety of genres and book types for every reader's interest.
-                        </p>
-                        <div className="flex flex-wrap gap-20 justify-center mb-36 animate-pulse">
-                            {/* Categories */}
-                            
-                            {['Fiction', 'Science', 'Comics', 'History', 'Technology', 'Biography'].map((category) => (
-                                <div className="bg-white w-36 p-8 rounded-xl shadow-md flex flex-col items-center hover:shadow-lg transition " key={category}>
-                                     <a href="/shop" className='flex'>  <i className={`fas fa-book text-4xl`}></i></a>
-                                    <p className="mt-4 font-medium text-sm">{category}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl font-bold text-black mb-4"> 📖 Book Categories</h2>
+        <p className="text-gray-500 mb-10">
+          Explore a variety of genres and book types for every reader's interest.
+        </p>
+
+        <div className="flex flex-wrap gap-6 justify-center">
+
+          {/* Fiction */}
+          <div className="bg-white w-36 p-8 rounded-xl shadow-md flex flex-col items-center hover:shadow-lg transition">
+            <i className="fas fa-book text-4xl"></i>
+            <p className="mt-4 font-medium text-sm">Fiction</p>
+          </div>
+
+          {/* Science */}
+          <div className="bg-white w-36 p-8 rounded-xl shadow-md flex flex-col items-center hover:shadow-lg transition">
+            <i className="fas fa-flask text-4xl"></i>
+            <p className="mt-4 font-medium text-sm">Science</p>
+          </div>
+
+          {/* Comics */}
+          <div className="bg-white w-36 p-8 rounded-xl shadow-md flex flex-col items-center hover:shadow-lg transition">
+            <i className="fas fa-book-open text-4xl"></i>
+            <p className="mt-4 font-medium text-sm">Comics</p>
+          </div>
+
+          {/* History */}
+          <div className="bg-white w-36 p-8 rounded-xl shadow-md flex flex-col items-center hover:shadow-lg transition">
+            <i className="fas fa-landmark text-4xl"></i>
+            <p className="mt-4 font-medium text-sm">History</p>
+          </div>
+
+          {/* Technology */}
+          <div className="bg-white w-36 p-8 rounded-xl shadow-md flex flex-col items-center hover:shadow-lg transition">
+            <i className="fas fa-laptop-code text-4xl"></i>
+            <p className="mt-4 font-medium text-sm">Technology</p>
+          </div>
+
+          {/* Biography */}
+          <div className="bg-white w-36 p-8 rounded-xl shadow-md flex flex-col items-center hover:shadow-lg transition">
+            <i className="fas fa-user text-4xl"></i>
+            <p className="mt-4 font-medium text-sm">Biography</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
 
                 {/* Featured Books */}
                 <section className="bg-gray-100 py-16 px-4 text-center">
@@ -136,10 +167,10 @@ function Home() {
                         <div className="flex flex-wrap gap-20 justify-center z-50">
                             {/* Book Cards */}
                             {[
-                                { title: "The Alchemist", author: "by Paulo Coelho", price: "$14.99", image: "https://m.media-amazon.com/images/I/71+2-t7M35L._SY522_.jpg" },
-                                { title: "Atomic Habits", author: "by James Clear", price: "$18.99", image: "https://m.media-amazon.com/images/I/81ANaVZk5LL._SY522_.jpg" },
-                                { title: "Rich Dad Poor Dad", author: "by Robert Kiyosaki", price: "$12.49", image: "https://m.media-amazon.com/images/I/81BE7eeKzAL._SY522_.jpg" },
-                                { title: "Think and Grow Rich", author: "by Napoleon Hill", price: "$10.99", image: "https://m.media-amazon.com/images/I/61IxJuRI39L._AC_UY327_FMwebp_QL65_.jpg" },
+                                { title: "The Alchemist", author: "by Paulo Coelho", price: "$14.99", image: "https://m.media-amazon.com/images/I/71+2-t7M35L._SY522_.jpg",descreption:"https://en.wikipedia.org/wiki/The_Alchemist_(novel)" },
+                                { title: "Atomic Habits", author: "by James Clear", price: "$18.99", image: "https://m.media-amazon.com/images/I/81ANaVZk5LL._SY522_.jpg",descreption:"https://en.wikipedia.org/wiki/Atomic_Habits" },
+                                { title: "Rich Dad Poor Dad", author: "by Robert Kiyosaki", price: "$12.49", image: "https://m.media-amazon.com/images/I/81BE7eeKzAL._SY522_.jpg", descreption:"https://en.wikipedia.org/wiki/Rich_Dad_Poor_Dad" },
+                                { title: "Think and Grow Rich", author: "by Napoleon Hill", price: "$10.99", image: "https://m.media-amazon.com/images/I/61IxJuRI39L._AC_UY327_FMwebp_QL65_.jpg", descreption:"https://en.wikipedia.org/wiki/Think_and_Grow_Rich" },
                             ].map((book, index) => (
                                 <div className="bg-white w-64 p-4 rounded-xl  hover:shadow-lg transition shadow-black shadow-lg" key={index}>
                                     <img src={book.image} alt={book.title} className="h-52 w-full object-cover rounded-md" />
@@ -148,7 +179,7 @@ function Home() {
                                     <p className="mt-2 font-bold text-blue-600">{book.price}</p>
                                     <div className="mt-4 flex gap-2">
                                         <button onClick={() => handleDownload(book.title)} className="bg-blue-600 text-white text-sm px-4 py-2 rounded hover:bg-blue-700 transition mr-2">Download</button>
-                                       <a href="https://en.wikipedia.org/wiki/The_Alchemist_(novel)">   <button className="bg-green-600 text-white text-sm px-4 py-2 rounded hover:bg-green-700 transition ml-4">Read Now</button></a>
+                                       <a href={book.descreption}>   <button className="bg-green-600 text-white text-sm px-4 py-2 rounded hover:bg-green-700 transition ml-4">Read Now</button></a>
                                       
                                     </div>
                                 </div>

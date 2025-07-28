@@ -15,11 +15,11 @@ function Footer() {
         <div>
           <h3 className="text-xl font-semibold text-white mb-4">Explore</h3>
           <ul className="space-y-2">
-            <li><a href="#home" className="hover:text-yellow-400 transition">Home</a></li>
-            <li><a href="#catalog" className="hover:text-yellow-400 transition">Catalog</a></li>
-            <li><a href="#bestsellers" className="hover:text-yellow-400 transition">Best Sellers</a></li>
-            <li><a href="#genres" className="hover:text-yellow-400 transition">Genres</a></li>
-            <li><a href="#contact" className="hover:text-yellow-400 transition">Contact</a></li>
+            <li><a href="/" className="hover:text-yellow-400 transition">Home</a></li>
+            <li><a href="/about" className="hover:text-yellow-400 transition">ABOUT</a></li>
+            <li><a href="/shop" className="hover:text-yellow-400 transition">BOOKS</a></li>
+            <li><a href="/Contact" className="hover:text-yellow-400 transition">CONTACT</a></li>
+          
           </ul>
         </div>
 

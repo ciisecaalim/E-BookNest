@@ -30,12 +30,12 @@ function Login() {
     };
 
     return (
-        <div className="min-h-screen flex flex-col mt-28">
-            <div className="flex flex-1 items-center justify-center">
-                <div className="bg-white p-6 sm:p-8 rounded-lg shadow-md w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+        <div className="min-h-screen flex flex-col mt-20 ">
+            <div className="flex flex-1 items-center justify-center ">
+                <div className="bg-white p-6 sm:p-8 rounded-lg shadow-md w-full  max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
                     <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
                     <form onSubmit={handleSubmit}>
-                        <div className="mb-4">
+                        <div className="mb-4 ">
                             <label className="block text-gray-700" htmlFor="username">Username</label>
                             <input
                                 type="text"

@@ -9,7 +9,7 @@ export default function AboutPage() {
 
 
  {/* About Us Section */}
-<section className="py-24 px-6 md:px-16 bg-white text-gray-800">
+<section className="py-16 px-6 md:px-16 bg-white text-gray-800">
   <div className="max-w-6xl mx-auto text-center mb-12">
     <h2 className="text-4xl font-extrabold text-blue-900 mb-4 md:mt-40 mt-20">📘 About Us</h2>
     <p className="text-gray-600 text-lg">
