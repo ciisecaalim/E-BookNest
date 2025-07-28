@@ -1,13 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { removeCart } from "../redux/reducer/Cart";
+import { caculatePrice, removeCart } from "../redux/reducer/Cart";
 
 export default function Cart() {
   const cartItem = useSelector((e) => e.cart.cartItem);
+  const totalPrice = useSelector((e) => e.cart.totalPrice);
+
+
   const dispatch = useDispatch()
+
+
   const handleRemove=(e)=>{
     dispatch(removeCart(e))
+    dispatch(caculatePrice())
   }
+
+
+  useEffect (() => {
+    dispatch(caculatePrice())
+  })
+ 
+
+
+
+
+
+
+
+
 
   // console.log(cartItem)
 
@@ -70,7 +90,7 @@ export default function Cart() {
         </div>
         <div className="flex justify-between font-semibold text-lg border-t pt-4">
           <span>Total Cost</span>
-       <span>$0</span>
+       <span>${totalPrice}</span>
           
          
         </div>

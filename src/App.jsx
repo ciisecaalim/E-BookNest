@@ -10,6 +10,7 @@ import LoginData from "./Components/LoginData"
 import Signup from "./pages/signUp"
 import Header from "./Components/header"
 import Footer from "./Components/footer"
+import Data from "./Components/LoginData"
 
  
   
@@ -29,6 +30,7 @@ function App() {
     <Route path="/Signup" element={<Signup/>}/>
     <Route path="/cart" element={<CartPage/>}/>
     <Route path="/LoginData" element={<LoginData/>}/>
+    <Route path="/Data" element={<Data/>}/>
  
   
   </Routes>
