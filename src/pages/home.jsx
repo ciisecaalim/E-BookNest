@@ -1,6 +1,5 @@
 import React from 'react';
-// import Footer from "../Components/footer";
-// import Header from "../Components/header";
+
 import Swal from 'sweetalert2';
 
 function Home() {
