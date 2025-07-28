@@ -17,12 +17,12 @@ function Home() {
     };
 
     return (
-        <div className="overflow-hidden">
+        <div className="overflow-hidden ">
         
 
             <div className="bg-white text-gray-800 overflow-hidden">
                 {/* Hero Section */}
-                <section className="bg-blue-900 text-white py-20 px-6 md:px-16 w-full mt-36 min-h-[750px] overflow-hidden">
+                <section className="bg-blue-900 text-white py-20 px-6 md:px-16 w-full mt-36 min-  overflow-hidden h-[750px] mb-60">
                     <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10 mt-10">
                         {/* Left Content */}
                         <div className="flex flex-col justify-between gap-6 opacity-0 -translate-x-10 animate-fadeInbt">
@@ -57,7 +57,7 @@ function Home() {
     <i className="fa-solid fa-address-book"></i>
     <h1 className="text-sm mt-2">address-book</h1>
   </div>
-  <div className="w-24 h-28 bg-white absolute top-[380px] left-[50%] rounded-lg text-green-600 text-center text-2xl p-1 pt-4 animate-bounce animate-box3">
+  <div className="w-24 h-28 bg-white absolute  top-[380px] left-[50%] rounded-lg text-green-600 text-center text-2xl p-1 pt-4 animate-bounce animate-box3">
     <i className="fa-solid fa-address-book"></i>
     <h1 className="text-sm mt-2">address-book</h1>
   </div>
