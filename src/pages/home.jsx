@@ -17,17 +17,17 @@ function Home() {
     };
 
     return (
-        <div className="overflow-hidden ">
+        <div className="overflow-hidden">
         
 
             <div className="bg-white text-gray-800 overflow-hidden">
                 {/* Hero Section */}
-                <section className="bg-blue-900 text-white py-20 px-6 md:px-16 w-full mt-36 min-  overflow-hidden h-[750px] mb-60">
+                <section className="bg-blue-900 text-white py-20 px-6 md:px-16 w-full mt-36 min-h-[750px] overflow-hidden">
                     <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10 mt-10">
                         {/* Left Content */}
                         <div className="flex flex-col justify-between gap-6 opacity-0 -translate-x-10 animate-fadeInbt">
                             <h1 className="text-5xl font-bold leading-tight transition-transform duration-900 ease-in-out hover:scale-1105">
-                                Welcome to <span className="text-yellow-400">📚 Booknest</span>
+                                Welcome to  <span className="text-yellow-400">📚 Booknest</span>
                             </h1>
                             <p className="text-lg text-gray-200 leading-relaxed transition-transform duration-300 ease-in-out hover:scale-105">
                                 Kusoo dhawoow maktabadda | Af-Soomaaliga. Waxaad halakan ka heli kartaa buugaag, qoraallo, iyo qormooyin ku qoran af-Soomaaliga. Fadlan la soco boggaan si aad u heshid sheekooyin, taariikh iyo aqoon guud oo ku saabsan ganacsiga, diinta, caafimaadka iyo wixi la mid ah…
@@ -47,21 +47,39 @@ function Home() {
                             />
                         </div>
 
+
 {/* box */}
-<div className="relative overflow-hidden w-full h-[500px] ml-[600px] transform -translate-y-[450px]  translate-x-16">
-  <div className="w-36 h-20 bg-white absolute top-[100px]  rounded-lg text-green-600 text-center text-2xl p-1 pt-2 animate-pulse animate-box">
-    <i className="fa-solid fa-address-book"></i>
-    <h1 className="text-sm mt-2">address-book</h1>
-  </div>
-  <div className="w-36 h-20 bg-white absolute top-[100px] left-[75%] rounded-lg text-green-600 text-center text-2xl p-1 pt-2 animate-pulse animate-box2">
-    <i className="fa-solid fa-address-book"></i>
-    <h1 className="text-sm mt-2">address-book</h1>
-  </div>
-  <div className="w-24 h-28 bg-white absolute  top-[380px] left-[50%] rounded-lg text-green-600 text-center text-2xl p-1 pt-4 animate-bounce animate-box3">
-    <i className="fa-solid fa-address-book"></i>
-    <h1 className="text-sm mt-2">address-book</h1>
-  </div>
+ 
+<div className="overflow-hidden"> 
+                   
+<div className=" w-36 h-20 bg-white absolute top-[400px]  rounded-lg ml-[660px] text-green-600 text-center text-2xl p-1 pt-2 animate-pulse animate-box overflow-hidden">
+ 
+<i class="fa-solid fa-address-book"></i>
+<h1 className="text-sm mt-2 overflow-hidden">address-book</h1>
 </div>
+  
+ 
+
+{/* 4 */}
+<div className="w-36 h-20 overflow-hidden bg-white absolute top-[400px] text-green-600  rounded-lg ml-[1140px] text-center text-2xl p-1 pt-2 animate-pulse animate-box2 ">
+
+<i class="fa-solid fa-address-book"></i>
+<h1 className="text-sm mt-2">address-book</h1>
+</div>
+
+
+
+{/* box4 */}
+                        
+<div className="w-24 h-28 bg-white overflow-hidden absolute top-[680px] text-green-600  rounded-lg ml-[920px] text-center text-2xl p-1 pt-4 animate-bounce animate-box3">
+
+<i class="fa-solid fa-address-book"></i>
+<h1 className="text-sm mt-2">address-book</h1>
+</div>
+
+
+</div>
+ 
 
 
 
@@ -80,8 +98,8 @@ function Home() {
 
 
                 {/* About Section */}
-                <section className="py-16 px-6 md:px-16 bg-gray-50 md:mt-10">
-                    <div className="max-w-4xl mx-auto text-center">
+                <section className="py-16 px-6 md:px-16 bg-gray-50 md:mt-10 ">
+                    <div className="max-w-4xl mx-auto text-center -mt-28">
                         <h2 className="text-3xl font-bold text-blue-900 mb-4">About Booknest</h2>
                         <p className="text-gray-700 text-lg">
                             Fahamka noocyada buuggu wuxuu noqon karaa jahawareer. Iyada oo qaybo badan oo hareeraha sabbaynaya, sidee loo heli karaa dhab ahaan waxa ay raadinayaan? Erayada fudud, nooca buuggu waa qayb ka mid ah suugaanta wadaagta mawduucyo gaar ah ama qaab-dhismeed. Ogaanshaha waxyaabaha lagama maarmaanka u ah noocyadan ayaa fududeynaya inaad doorato buugga saxda ah iyadoo loo eegayo dareenkaaga ama xiisahaaga.
@@ -97,7 +115,7 @@ function Home() {
           Explore a variety of genres and book types for every reader's interest.
         </p>
 
-        <div className="flex flex-wrap gap-6 justify-center animate-pulse">
+        <div className="flex flex-wrap gap-6 justify-center">
 
           {/* Fiction */}
           <div className="bg-white w-36 p-8 rounded-xl shadow-md flex flex-col items-center hover:shadow-lg transition">
@@ -194,7 +212,7 @@ function Home() {
                 </section>
 
                 {/* Testimonials */}
-                <section className="bg-blue-50 py-20 px-6 md:px-16 animate-pulse">
+                <section className="bg-blue-50 py-20 px-6 md:px-16">
                     <div className="max-w-5xl mx-auto text-center">
                         <h2 className="text-3xl font-bold text-blue-900 mb-12">💬 What Readers Say</h2>
                         <div className="grid md:grid-cols-3 gap-8">
